@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FitCore Personal Gym — 続けられなかったのは、あなたのせいじゃない。30・40代専門のパーソナルジム。無料カウンセリング予約受付中。" />
+  <title>FitCore Personal Gym | 無料カウンセリング予約</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="gym.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       ヘッダー / グローバルナビ
+  ================================================ -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">Fit<span>Core</span></a>
+
+        <nav class="header__nav" id="globalNav" aria-label="グローバルナビ">
+          <a href="#features"  class="header__nav-link">特徴</a>
+          <a href="#voices"    class="header__nav-link">お客様の声</a>
+          <a href="#programs"  class="header__nav-link">プログラム</a>
+          <a href="#trainer"   class="header__nav-link">トレーナー</a>
+          <a href="#faq"       class="header__nav-link">よくある質問</a>
+          <a href="#cta-form"  class="btn btn--primary header__cta">無料相談を予約する</a>
+        </nav>
+
+        <button class="header__hamburger" id="hamburgerBtn"
+                aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+          <span class="header__hamburger-line"></span>
+          <span class="header__hamburger-line"></span>
+          <span class="header__hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ================================================
+         Section 01: ヒーロー
+         レイアウト: 左テキスト + 右装飾円（二分割 / 1カラムSP）
+    ================================================ -->
+    <section class="hero" aria-labelledby="heroHeading">
+      <div class="hero__bg" aria-hidden="true">
+        <img
+          class="hero__bg-img"
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80"
+          alt=""
+          role="presentation"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__deco-circle" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <span class="hero__tag">30・40代専門 パーソナルジム</span>
+
+            <h1 class="hero__catch" id="heroHeading">
+              続けられなかったのは、<br>
+              <em>あなたのせいじゃない。</em>
+            </h1>
+
+            <p class="hero__sub">
+              正しいメソッドと、あなたに寄り添うトレーナーがいれば、<br>
+              身体は必ず変わります。まず60分、無料で話しましょう。
+            </p>
+
+            <div class="hero__actions">
+              <a href="#cta-form" class="btn btn--primary btn--lg">
+                まず話だけ聞いてみる（無料・60分）
+              </a>
+              <a href="#features" class="btn btn--outline">
+                FitCoreの特徴を見る
+              </a>
+            </div>
+            <p class="hero__no-pressure">
+              ✓ 入会の強制なし &nbsp; ✓ 勧誘一切なし &nbsp; ✓ 当日キャンセルOK
+            </p>
+
+            <div class="hero__trust" role="list" aria-label="実績数値">
+              <div class="hero__trust-item" role="listitem">
+                <span class="hero__trust-num" data-count="1200" data-suffix="+">0</span>
+                <span>会員実績</span>
+              </div>
+              <div class="hero__trust-item" role="listitem">
+                <span class="hero__trust-num" data-count="96" data-suffix="%">0</span>
+                <span>目標達成率</span>
+              </div>
+              <div class="hero__trust-item" role="listitem">
+                <span class="hero__trust-num" data-count="8" data-suffix="">0</span>
+                <span>年の実績</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         Section 02: 共感・問題提起
+         レイアウト: 見出し + カード3列グリッド + メッセージボックス
+    ================================================ -->
+    <section class="problem section" id="problem" aria-labelledby="problemHeading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-heading__label">Does This Sound Like You?</span>
+          <h2 class="section-heading__title" id="problemHeading">
+            こんな経験、ありませんか？
+          </h2>
+          <p class="section-heading__sub">
+            運動を続けられなかったのは、意志の弱さではありません。
+          </p>
+        </div>
+
+        <div class="problem__grid">
+          <div class="problem__card">
+            <div class="problem__card-icon" aria-hidden="true">😓</div>
+            <p class="problem__card-text">ジムに入会したけど<br>3ヶ月で行かなくなった</p>
+            <p class="problem__card-sub">「また続かなかった…」という自己嫌悪のループ。</p>
+          </div>
+          <div class="problem__card">
+            <div class="problem__card-icon" aria-hidden="true">📉</div>
+            <p class="problem__card-text">ダイエットを繰り返しても<br>リバウンドしてしまう</p>
+            <p class="problem__card-sub">食事制限・運動を頑張るほど、反動が大きくなる。</p>
+          </div>
+          <div class="problem__card">
+            <div class="problem__card-icon" aria-hidden="true">😰</div>
+            <p class="problem__card-text">何から始めればいいか<br>わからなくて動けない</p>
+            <p class="problem__card-sub">情報が多すぎて、正解を探しているうちに時間が過ぎる。</p>
+          </div>
+          <div class="problem__card">
+            <div class="problem__card-icon" aria-hidden="true">🏃</div>
+            <p class="problem__card-text">仕事が忙しくて<br>運動する時間が取れない</p>
+            <p class="problem__card-sub">やる気はあるのに、スケジュールが邪魔をする。</p>
+          </div>
+          <div class="problem__card">
+            <div class="problem__card-icon" aria-hidden="true">🤔</div>
+            <p class="problem__card-text">一人でやっても<br>モチベーションが続かない</p>
+            <p class="problem__card-sub">結果が見えにくく、孤独なトレーニングが苦しくなる。</p>
+          </div>
+          <div class="problem__card">
+            <div class="problem__card-icon" aria-hidden="true">🩺</div>
+            <p class="problem__card-text">体力の低下や<br>身体の不調を感じ始めた</p>
+            <p class="problem__card-sub">40代に入り、昔とは違う身体のサインが増えてきた。</p>
+          </div>
+        </div>
+
+        <div class="problem__message" aria-label="共感メッセージ">
+          <p class="problem__message-text">
+            続けられなかったのは<span>「方法が間違っていた」</span>だけ。<br>
+            正しいサポートがあれば、誰でも必ず変われます。
+          </p>
+        </div>
+
+        <!-- 問題提起直後のCTA（共感が最高潮の瞬間） -->
+        <div class="inline-cta" aria-label="カウンセリング誘導">
+          <p class="inline-cta__text">「自分に合った方法」を一緒に見つけませんか？</p>
+          <a href="#cta-form" class="btn btn--primary">
+            まず話だけ聞いてみる（無料）
+          </a>
+          <p class="inline-cta__note">勧誘・入会強制は一切ありません</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         Section 03: 特徴・強み
+         レイアウト: ビジュアル＋テキストの交互2カラム（zigzag）
+    ================================================ -->
+    <section class="features section section--light" id="features" aria-labelledby="featuresHeading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-heading__label">Why FitCore</span>
+          <h2 class="section-heading__title" id="featuresHeading">
+            FitCoreが選ばれる理由
+          </h2>
+          <p class="section-heading__sub">
+            あなたの「続かなかった理由」をひとつずつ解決します。
+          </p>
+        </div>
+
+        <div class="features__list">
+
+          <!-- 特徴1 -->
+          <div class="feature-item" data-reveal>
+            <div class="feature-item__visual">
+              <img
+                class="feature-item__img"
+                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80"
+                alt="トレーナーとのマンツーマントレーニング"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
+            </div>
+            <div class="feature-item__body">
+              <div class="feature-item__number" aria-hidden="true">01</div>
+              <span class="feature-item__label">Personalization</span>
+              <h3 class="feature-item__title">
+                あなただけの<br>完全オーダーメイドプログラム
+              </h3>
+              <p class="feature-item__text">
+                体型・生活習慣・目標・過去の挫折経験を丁寧にヒアリングし、
+                完全オリジナルのトレーニングと食事プランを設計します。
+                「みんな同じメニュー」は一切なし。あなたの身体だけに最適化します。
+              </p>
+            </div>
+          </div>
+
+          <!-- 特徴2 -->
+          <div class="feature-item" data-reveal data-reveal-delay="100">
+            <div class="feature-item__visual">
+              <img
+                class="feature-item__img"
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80"
+                alt="継続サポートのトレーニング風景"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
+            </div>
+            <div class="feature-item__body">
+              <div class="feature-item__number" aria-hidden="true">02</div>
+              <span class="feature-item__label">Continuity Support</span>
+              <h3 class="feature-item__title">
+                続けるための<br>トータルサポート体制
+              </h3>
+              <p class="feature-item__text">
+                セッション外でも、LINEでいつでも相談OK。
+                食事の写真を送れば即フィードバック。
+                モチベーションが落ちたときも、そっと背中を押すコーチがいます。
+              </p>
+            </div>
+          </div>
+
+          <!-- 特徴3 -->
+          <div class="feature-item" data-reveal data-reveal-delay="200">
+            <div class="feature-item__visual">
+              <img
+                class="feature-item__img"
+                src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=800&q=80"
+                alt="科学的根拠に基づくトレーニング指導"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
+            </div>
+            <div class="feature-item__body">
+              <div class="feature-item__number" aria-hidden="true">03</div>
+              <span class="feature-item__label">Science-Based</span>
+              <h3 class="feature-item__title">
+                科学的根拠に基づく<br>確実に結果が出る手法
+              </h3>
+              <p class="feature-item__text">
+                スポーツ科学・栄養学・行動変容理論をベースにした
+                エビデンスのあるメソッドを採用。
+                「なんとなく頑張る」ではなく「なぜそれをするか」が明確なトレーニングです。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         Section 04: 実績・数字
+         レイアウト: ダークBG + 4列数字グリッド
+    ================================================ -->
+    <section class="results section section--dark" aria-labelledby="resultsHeading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-heading__label">Our Results</span>
+          <h2 class="section-heading__title" id="resultsHeading">
+            数字が証明する、確かな実績
+          </h2>
+        </div>
+
+        <div class="results__grid" role="list" aria-label="実績数値" id="resultsGrid">
+          <div class="result-stat" role="listitem" data-reveal>
+            <div class="result-stat__num">
+              <span class="js-counter" data-count="1200" data-suffix="">0</span><span class="result-stat__unit">+</span>
+            </div>
+            <div class="result-stat__label">累計会員数</div>
+          </div>
+          <div class="result-stat" role="listitem" data-reveal data-reveal-delay="100">
+            <div class="result-stat__num">
+              <span class="js-counter" data-count="96" data-suffix="">0</span><span class="result-stat__unit">%</span>
+            </div>
+            <div class="result-stat__label">3ヶ月目標達成率</div>
+          </div>
+          <div class="result-stat" role="listitem" data-reveal data-reveal-delay="200">
+            <div class="result-stat__num">
+              <span class="js-counter" data-count="49" data-suffix="" data-decimal="1">0</span><span class="result-stat__unit">/5</span>
+            </div>
+            <div class="result-stat__label">顧客満足度評価</div>
+          </div>
+          <div class="result-stat" role="listitem" data-reveal data-reveal-delay="300">
+            <div class="result-stat__num">
+              <span class="js-counter" data-count="8" data-suffix="">0</span><span class="result-stat__unit">年</span>
+            </div>
+            <div class="result-stat__label">サービス運営実績</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         Section 05: お客様の声
+         レイアウト: 3列カードグリッド（クォーテーション装飾）
+    ================================================ -->
+    <section class="voices section" id="voices" aria-labelledby="voicesHeading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-heading__label">Customer Voices</span>
+          <h2 class="section-heading__title" id="voicesHeading">
+            通ってよかった。変われた。
+          </h2>
+          <p class="section-heading__sub">
+            過去に何度も挫折した方が、FitCoreで変わった実話です。
+          </p>
+        </div>
+
+        <div class="voices__grid" data-reveal>
+
+          <article class="voice-card">
+            <span class="voice-card__result">3ヶ月で-8.2kg達成</span>
+            <blockquote class="voice-card__text">
+              「何度もダイエットに失敗してきた自分が、まさか本当に痩せられるとは。
+              食事を我慢させるのではなく、食べながら変われる方法を教えてもらえて、
+              ストレスがなかったのが続けられた理由だと思います。」
+            </blockquote>
+            <div class="voice-card__profile">
+              <img
+                class="voice-card__avatar voice-card__avatar--photo"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+                alt="田中 真由美さん"
+                loading="lazy"
+                width="48"
+                height="48"
+              />
+              <div>
+                <div class="voice-card__name">田中 真由美さん</div>
+                <div class="voice-card__meta">38歳・会社員（女性）</div>
+              </div>
+              <div class="voice-card__stars" aria-label="評価5つ星">★★★★★</div>
+            </div>
+          </article>
+
+          <article class="voice-card">
+            <span class="voice-card__result">筋肉量+4.1kg・体脂肪-9%</span>
+            <blockquote class="voice-card__text">
+              「40代に入って代謝が落ちたのを感じていました。
+              仕事が忙しい中でもLINEで相談できる環境が本当に助かった。
+              トレーナーさんが諦めずに伴走してくれるから、こっちも諦められない。」
+            </blockquote>
+            <div class="voice-card__profile">
+              <img
+                class="voice-card__avatar voice-card__avatar--photo"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+                alt="佐藤 健二さん"
+                loading="lazy"
+                width="48"
+                height="48"
+              />
+              <div>
+                <div class="voice-card__name">佐藤 健二さん</div>
+                <div class="voice-card__meta">42歳・管理職（男性）</div>
+              </div>
+              <div class="voice-card__stars" aria-label="評価5つ星">★★★★★</div>
+            </div>
+          </article>
+
+          <article class="voice-card">
+            <span class="voice-card__result">産後2年で-7.4kg・体脂肪-8%達成</span>
+            <blockquote class="voice-card__text">
+              「産後から体型が戻らず、自分に自信がなくなっていました。
+              子育て中でも通えるか不安でしたが、スケジュールを柔軟に組んでもらえて。
+              産後の身体への理解があるトレーナーさんに、安心して相談できました。」
+            </blockquote>
+            <div class="voice-card__profile">
+              <img
+                class="voice-card__avatar voice-card__avatar--photo"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80"
+                alt="中村 あいさん"
+                loading="lazy"
+                width="48"
+                height="48"
+              />
+              <div>
+                <div class="voice-card__name">中村 あいさん</div>
+                <div class="voice-card__meta">35歳・育児中（女性）/ 産後2年目でスタート</div>
+              </div>
+              <div class="voice-card__stars" aria-label="評価5つ星">★★★★★</div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- お客様の声直後CTA（信頼が最高潮の瞬間） -->
+        <div class="inline-cta" aria-label="カウンセリング誘導">
+          <p class="inline-cta__text">あなたも、次の成功事例になりませんか？</p>
+          <a href="#cta-form" class="btn btn--primary">
+            無料カウンセリングを予約する
+          </a>
+          <p class="inline-cta__note">✓ 完全無料 &nbsp; ✓ オンライン相談OK &nbsp; ✓ 24時間受付</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         Section 06: プログラム紹介
+         レイアウト: 3列カード（おすすめカードをfeatured強調）
+    ================================================ -->
+    <section class="programs section section--light" id="programs" aria-labelledby="programsHeading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-heading__label">Programs</span>
+          <h2 class="section-heading__title" id="programsHeading">
+            あなたに合ったプログラム
+          </h2>
+          <p class="section-heading__sub">
+            目的・ライフスタイルに合わせて選べる3コース。<br>
+            どれが合うか迷ったら、まずカウンセリングで相談を。
+          </p>
+        </div>
+
+        <div class="programs__grid">
+
+          <article class="program-card">
+            <div class="program-card__thumb" aria-hidden="true">🔥</div>
+            <div class="program-card__body">
+              <h3 class="program-card__title">ダイエット集中コース</h3>
+              <p class="program-card__desc">
+                3ヶ月で体型を変えることに特化。食事管理と有酸素・筋トレの
+                ハイブリッドプログラムで、無理なくリバウンドしない身体をつくります。
+              </p>
+              <ul class="program-card__list">
+                <li>週2〜3回セッション</li>
+                <li>食事プラン込み</li>
+                <li>LINE毎日サポート</li>
+              </ul>
+            </div>
+            <div class="program-card__price">
+              月額 <strong>39,800円〜</strong>
+              <span class="program-card__price-note">（1回あたり 約5,000円）</span>
+            </div>
+            <div class="program-card__footer">
+              <a href="#cta-form" class="btn btn--outline btn--full">詳しく相談する</a>
+            </div>
+          </article>
+
+          <article class="program-card program-card--featured">
+            <span class="program-card__badge">人気No.1</span>
+            <div class="program-card__thumb" aria-hidden="true">⚡</div>
+            <div class="program-card__body">
+              <h3 class="program-card__title">ボディメイク標準コース</h3>
+              <p class="program-card__desc">
+                ダイエットと筋肉づくりを同時進行。忙しい30・40代のための
+                効率重視のプログラム。仕事終わりでも通いやすい時間帯に対応。
+              </p>
+              <ul class="program-card__list">
+                <li>週2回セッション（60分）</li>
+                <li>オーダーメイドメニュー</li>
+                <li>栄養指導・LINEサポート</li>
+                <li>月1回体組成測定・振り返り</li>
+              </ul>
+            </div>
+            <div class="program-card__price">
+              月額 <strong>54,800円〜</strong>
+              <span class="program-card__price-note">（1日あたり 約130円のコーヒー代と同じ）</span>
+            </div>
+            <div class="program-card__footer">
+              <a href="#cta-form" class="btn btn--primary btn--full">まず無料で相談する</a>
+            </div>
+          </article>
+
+          <article class="program-card">
+            <div class="program-card__thumb" aria-hidden="true">🧘</div>
+            <div class="program-card__body">
+              <h3 class="program-card__title">コンディショニングコース</h3>
+              <p class="program-card__desc">
+                腰痛・肩こり・姿勢改善を目的とした機能回復特化プログラム。
+                身体のゆがみを整え、日常の動きやすさと活力を取り戻します。
+              </p>
+              <ul class="program-card__list">
+                <li>週1〜2回セッション</li>
+                <li>姿勢・動作分析付き</li>
+                <li>セルフケア指導込み</li>
+              </ul>
+            </div>
+            <div class="program-card__price">
+              月額 <strong>29,800円〜</strong>
+              <span class="program-card__price-note">（週1回プランから）</span>
+            </div>
+            <div class="program-card__footer">
+              <a href="#cta-form" class="btn btn--outline btn--full">詳しく相談する</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         Section 07: ご利用の流れ
+         レイアウト: 縦タイムライン（左番号・右テキスト）
+    ================================================ -->
+    <section class="flow section" id="flow" aria-labelledby="flowHeading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-heading__label">How It Works</span>
+          <h2 class="section-heading__title" id="flowHeading">
+            ご利用の流れ
+          </h2>
+          <p class="section-heading__sub">
+            まずは60分の無料カウンセリングから。費用も義務も一切ありません。
+          </p>
+        </div>
+
+        <div class="flow__steps" role="list">
+
+          <div class="step-item" role="listitem">
+            <div class="step-item__num" aria-hidden="true">1</div>
+            <div class="step-item__body">
+              <span class="step-item__tag">STEP 01</span>
+              <h3 class="step-item__title">無料カウンセリング予約（本日〜）</h3>
+              <p class="step-item__text">
+                このページ下部のフォームから予約。
+                お名前・連絡先・希望日時を入力するだけ。24時間以内に確認のご連絡をします。
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item" role="listitem">
+            <div class="step-item__num" aria-hidden="true">2</div>
+            <div class="step-item__body">
+              <span class="step-item__tag">STEP 02</span>
+              <h3 class="step-item__title">無料カウンセリング（60分）</h3>
+              <p class="step-item__text">
+                現在の状態・目標・生活リズム・過去の経緯を丁寧にヒアリング。
+                一切の売り込みはなく、あなたの悩みを聞くことに集中します。
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item" role="listitem">
+            <div class="step-item__num" aria-hidden="true">3</div>
+            <div class="step-item__body">
+              <span class="step-item__tag">STEP 03</span>
+              <h3 class="step-item__title">プログラム設計・ご提案</h3>
+              <p class="step-item__text">
+                カウンセリング内容をもとにオーダーメイドプランをご提案。
+                料金・スケジュールも含めて確認し、納得してからご入会いただけます。
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item" role="listitem">
+            <div class="step-item__num" aria-hidden="true">4</div>
+            <div class="step-item__body">
+              <span class="step-item__tag">STEP 04</span>
+              <h3 class="step-item__title">トレーニング開始</h3>
+              <p class="step-item__text">
+                いよいよスタート。セッション外でもLINEで毎日サポート。
+                小さな変化を一緒に確認しながら、確実に目標へ近づいていきます。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         Section 08: トレーナー紹介
+         レイアウト: 写真（左）＋プロフィール文（右）2カラム
+    ================================================ -->
+    <section class="trainer section section--light" id="trainer" aria-labelledby="trainerHeading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-heading__label">Trainer</span>
+          <h2 class="section-heading__title" id="trainerHeading">
+            あなたを担当するトレーナー
+          </h2>
+        </div>
+
+        <div class="trainer__inner" data-reveal>
+          <div class="trainer__photo-wrap">
+            <div class="trainer__photo">
+              <img
+                class="trainer__photo-img"
+                src="https://images.unsplash.com/photo-1611672013347-db24c1a8f0d4?auto=format&fit=crop&w=600&q=80"
+                alt="ヘッドトレーナー 山本 健太"
+                loading="lazy"
+                width="600"
+                height="800"
+              />
+            </div>
+          </div>
+
+          <div class="trainer__body">
+            <span class="trainer__label">Head Trainer</span>
+            <h3 class="trainer__name">山本 健太</h3>
+            <p class="trainer__title">NSCA認定パーソナルトレーナー / 管理栄養士</p>
+            <p class="trainer__bio">
+              運動嫌いだった自分自身が、正しい知識と継続の仕組みを学んで身体を変えた経験を持つ。
+              「続かないのは環境と方法のせい」という信念のもと、
+              これまで30〜40代を中心に1,200名以上をサポート。
+              特に「忙しいビジネスパーソンが無理なく習慣化できるプログラム設計」を得意とする。
+              個々の心理的障壁に寄り添うカウンセリングアプローチが好評。
+            </p>
+            <div class="trainer__certs" role="list" aria-label="保有資格">
+              <span class="trainer__cert" role="listitem">NSCA-CSCS</span>
+              <span class="trainer__cert" role="listitem">JATI認定トレーニング指導者</span>
+              <span class="trainer__cert" role="listitem">管理栄養士</span>
+              <span class="trainer__cert" role="listitem">健康運動指導士</span>
+              <span class="trainer__cert" role="listitem">ダイエット検定1級</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         Section 09: よくある質問（FAQ）
+         レイアウト: アコーディオン（details/summary）縦1列
+    ================================================ -->
+    <section class="faq section" id="faq" aria-labelledby="faqHeading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-heading__label">FAQ</span>
+          <h2 class="section-heading__title" id="faqHeading">
+            よくあるご質問
+          </h2>
+          <p class="section-heading__sub">
+            気になることは何でもカウンセリングでお聞きいただけます。
+          </p>
+        </div>
+
+        <div class="faq__list">
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span class="faq-item__q-icon" aria-hidden="true">Q</span>
+              <span class="faq-item__q-text">運動が久しぶりで体力に自信がありません。大丈夫ですか？</span>
+              <span class="faq-item__toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-item__answer">
+              まったく問題ありません。FitCoreにいらっしゃる方のほとんどが、
+              長期間運動から離れていた方です。カウンセリングで現在の体力・健康状態を
+              丁寧に確認したうえで、無理のないところからスタートします。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span class="faq-item__q-icon" aria-hidden="true">Q</span>
+              <span class="faq-item__q-text">無料カウンセリングで、その場で入会を勧められますか？</span>
+              <span class="faq-item__toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-item__answer">
+              一切ありません。カウンセリングはあなたの話を聞き、
+              何が合っているかを一緒に考える場です。
+              プランのご提案はしますが、その日に決断を求めることはなく、
+              じっくり検討していただいてから入会いただけます。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span class="faq-item__q-icon" aria-hidden="true">Q</span>
+              <span class="faq-item__q-text">忙しくて毎週通えるか不安です。</span>
+              <span class="faq-item__toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-item__answer">
+              週1回からのプランも用意しています。また、お仕事が立て込む時期には
+              スケジュール調整も柔軟に対応可能です。
+              続けられる無理のないペースを一緒に設計しますので、
+              まずはカウンセリングでご状況をお聞かせください。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span class="faq-item__q-icon" aria-hidden="true">Q</span>
+              <span class="faq-item__q-text">食事制限は厳しいですか？</span>
+              <span class="faq-item__toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-item__answer">
+              「食べないダイエット」は行いません。管理栄養士の資格を持つトレーナーが、
+              今の食生活をベースに「食べながら変わる」プランを提案します。
+              極端な制限はリバウンドの原因になるため、長く続く方法を重視しています。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span class="faq-item__q-icon" aria-hidden="true">Q</span>
+              <span class="faq-item__q-text">オンラインでのサポートはありますか？</span>
+              <span class="faq-item__toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-item__answer">
+              はい。LINEを通じたセッション外サポートに加え、
+              オンライントレーニングセッションにも対応しています。
+              出張が多い方や、都合に合わせて使い分けたい方にも好評です。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span class="faq-item__q-icon" aria-hidden="true">Q</span>
+              <span class="faq-item__q-text">途中でやめることはできますか？縛りはありますか？</span>
+              <span class="faq-item__toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-item__answer">
+              最低契約期間は3ヶ月ですが、その後は1ヶ月単位で更新・停止が可能です。
+              急な転勤・体調変化などのやむを得ない事情がある場合は、
+              ご相談のうえ柔軟に対応いたします。強引な引き止めは一切行いません。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span class="faq-item__q-icon" aria-hidden="true">Q</span>
+              <span class="faq-item__q-text">産後や不規則な仕事をしていても通えますか？</span>
+              <span class="faq-item__toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-item__answer">
+              はい、対応しています。産後の方には身体の回復状況に合わせた
+              段階的なプログラムをご用意しています。シフト勤務・夜勤の方には
+              早朝（7時〜）・夜間（21時まで）の時間帯も対応しており、
+              スケジュール変更も柔軟に承ります。
+            </div>
+          </details>
+
+        </div>
+
+        <!-- FAQ直後CTA（不安解消直後の行動促進） -->
+        <div class="inline-cta inline-cta--light" aria-label="カウンセリング誘導">
+          <p class="inline-cta__text">他にも気になることがあれば、カウンセリングで何でも聞けます</p>
+          <a href="#cta-form" class="btn btn--primary">
+            60分の無料カウンセリングを予約する
+          </a>
+          <p class="inline-cta__note">✓ 当日キャンセルOK &nbsp; ✓ 勧誘なし &nbsp; ✓ オンライン相談可</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         Section 10: CTAフォーム（無料カウンセリング予約）
+         レイアウト: ダークBG + センター配置フォーム（単列）
+    ================================================ -->
+    <section class="cta-form section" id="cta-form" aria-labelledby="formHeading">
+      <div class="container">
+        <div class="cta-form__inner">
+          <div class="section-heading">
+            <span class="section-heading__label">Free Counseling</span>
+            <h2 class="section-heading__title" id="formHeading">
+              無料カウンセリングを予約する
+            </h2>
+            <p class="section-heading__sub">
+              費用・勧誘は一切なし。まず話すだけでOKです。<br>
+              フォーム送信後、24時間以内にご連絡します。
+            </p>
+          </div>
+
+          <!-- 希少性バナー -->
+          <div class="form__scarcity" role="alert" aria-live="polite">
+            <span class="form__scarcity-icon" aria-hidden="true">⚠</span>
+            今月の無料カウンセリング枠：<strong>残り3名</strong>
+          </div>
+
+          <form class="form" id="counselingForm" action="#" method="post" novalidate
+                aria-label="無料カウンセリング予約フォーム">
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label form__label--required" for="lastName">姓</label>
+                <input class="form__input" type="text" id="lastName" name="last_name"
+                       placeholder="山田" autocomplete="family-name" required />
+              </div>
+              <div class="form__group">
+                <label class="form__label form__label--required" for="firstName">名</label>
+                <input class="form__input" type="text" id="firstName" name="first_name"
+                       placeholder="太郎" autocomplete="given-name" required />
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label form__label--required" for="tel">電話番号またはメールアドレス</label>
+              <input class="form__input" type="text" id="tel" name="contact"
+                     placeholder="090-0000-0000 または example@email.com"
+                     autocomplete="tel" required />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label form__label--required" for="goal">いちばんのお悩み</label>
+              <select class="form__select" id="goal" name="goal" required>
+                <option value="" disabled selected>選択してください</option>
+                <option value="diet">体重・体脂肪を減らしたい</option>
+                <option value="muscle">筋肉をつけてボディメイクしたい</option>
+                <option value="postpartum">産後の体型を戻したい</option>
+                <option value="conditioning">身体の不調・姿勢を改善したい</option>
+                <option value="health">健康維持・体力向上</option>
+                <option value="other">その他（カウンセリングで相談したい）</option>
+              </select>
+            </div>
+
+            <p class="form__privacy">
+              送信することで<a href="#">プライバシーポリシー</a>に同意したことになります。
+            </p>
+
+            <div class="form__submit-wrap">
+              <button type="submit" class="btn btn--primary btn--lg btn--full">
+                まず話だけ聞いてみる（無料・60分）
+              </button>
+            </div>
+            <ul class="form__guarantee">
+              <li>✓ 入会の強制・勧誘は一切ありません</li>
+              <li>✓ 当日キャンセルOK</li>
+              <li>✓ 送信後24時間以内にご連絡します</li>
+            </ul>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================================================
+       フッター
+  ================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">Fit<span>Core</span></div>
+          <p class="footer__brand-desc">
+            30・40代専門のパーソナルジム。<br>
+            あなたの「続けられなかった理由」を解決し、<br>
+            確実に身体を変えるサポートをします。
+          </p>
+        </div>
+
+        <div>
+          <div class="footer__col-title">メニュー</div>
+          <ul class="footer__links">
+            <li><a href="#features"  class="footer__link">FitCoreの特徴</a></li>
+            <li><a href="#voices"    class="footer__link">お客様の声</a></li>
+            <li><a href="#programs"  class="footer__link">プログラム</a></li>
+            <li><a href="#flow"      class="footer__link">ご利用の流れ</a></li>
+            <li><a href="#trainer"   class="footer__link">トレーナー</a></li>
+            <li><a href="#faq"       class="footer__link">よくある質問</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title">お問い合わせ</div>
+          <ul class="footer__links">
+            <li><a href="#cta-form" class="footer__link">無料カウンセリング予約</a></li>
+            <li><a href="#"         class="footer__link">アクセス</a></li>
+            <li><a href="#"         class="footer__link">料金について</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <small class="footer__copy">&copy; 2024 FitCore Personal Gym. All rights reserved.</small>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">プライバシーポリシー</a>
+          <a href="#" class="footer__bottom-link">利用規約</a>
+          <a href="#" class="footer__bottom-link">特定商取引法</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================================================
+       フローティングCTA（SP固定ボタン）
+  ================================================ -->
+  <div class="floating-cta" aria-label="スクロール固定CTAボタン">
+    <a href="#cta-form" class="btn btn--primary btn--full">
+      無料カウンセリングを予約する
+    </a>
+  </div>
+
+
+  <!-- ================================================
+       JavaScript: スクロールフェードイン（IntersectionObserver）
+  ================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---- スクロールフェードイン ---- */
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver(
+          function (entries, obs) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                obs.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -48px 0px' }
+        );
+        document.querySelectorAll('[data-reveal]').forEach(function (el) {
+          revealObserver.observe(el);
+        });
+      } else {
+        /* フォールバック：IO非対応ブラウザは即表示 */
+        document.querySelectorAll('[data-reveal]').forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+      }
+
+      /* ---- カウンターアップ ---- */
+      function animateCounter(el, target, isDecimal, duration) {
+        var start = null;
+        var startVal = 0;
+
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          var elapsed = timestamp - start;
+          var progress = Math.min(elapsed / duration, 1);
+          /* ease-out cubic */
+          var eased = 1 - Math.pow(1 - progress, 3);
+          var current = startVal + (target - startVal) * eased;
+
+          if (isDecimal) {
+            el.textContent = (current / 10).toFixed(1);
+          } else {
+            el.textContent = Math.floor(current).toLocaleString('ja-JP');
+          }
+
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            if (isDecimal) {
+              el.textContent = (target / 10).toFixed(1);
+            } else {
+              el.textContent = target.toLocaleString('ja-JP');
+            }
+          }
+        }
+        requestAnimationFrame(step);
+      }
+
+      /* js-counter（実績セクション） */
+      if ('IntersectionObserver' in window) {
+        var counterObserver = new IntersectionObserver(
+          function (entries, obs) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                var el = entry.target;
+                var count = parseInt(el.dataset.count, 10);
+                var isDecimal = el.hasAttribute('data-decimal');
+                animateCounter(el, count, isDecimal, 1600);
+                obs.unobserve(el);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+        document.querySelectorAll('.js-counter').forEach(function (el) {
+          counterObserver.observe(el);
+        });
+
+        /* ヒーローの trust-num（data-count 属性がある場合） */
+        var heroCounterObserver = new IntersectionObserver(
+          function (entries, obs) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                var el = entry.target;
+                var count = parseInt(el.dataset.count, 10);
+                var suffix = el.dataset.suffix || '';
+                animateCounter(el, count, false, 1400);
+                /* アニメーション完了後にsuffixを付与 */
+                setTimeout(function () {
+                  el.textContent = count.toLocaleString('ja-JP') + suffix;
+                }, 1450);
+                obs.unobserve(el);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+        document.querySelectorAll('.hero__trust-num[data-count]').forEach(function (el) {
+          heroCounterObserver.observe(el);
+        });
+      }
+
+    })();
+  </script>
+
+  <!-- ================================================
+       JavaScript: ハンバーガーメニュー
+  ================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const globalNav    = document.getElementById('globalNav');
+
+      if (!hamburgerBtn || !globalNav) return;
+
+      hamburgerBtn.addEventListener('click', function () {
+        const isOpen = globalNav.classList.toggle('is-open');
+        hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
+        hamburgerBtn.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+      });
+
+      /* ナビリンクをクリックしたらメニューを閉じる */
+      globalNav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          globalNav.classList.remove('is-open');
+          hamburgerBtn.setAttribute('aria-expanded', 'false');
+          hamburgerBtn.setAttribute('aria-label', 'メニューを開く');
+        });
+      });
+
+      /* フォーム送信ハンドラ（デモ用） */
+      const form = document.getElementById('counselingForm');
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const submitBtn = form.querySelector('[type="submit"]');
+          submitBtn.textContent = '送信しました！担当者からご連絡します';
+          submitBtn.disabled = true;
+          submitBtn.style.background = 'linear-gradient(135deg, #1A9494, #2ABFBF)';
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>

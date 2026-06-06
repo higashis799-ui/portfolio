@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>東京都公式ウェブサイト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokyo.css">
+</head>
+<body>
+
+  <!-- ===== TOPBAR ===== -->
+  <div class="topbar">
+    <div class="topbar__inner">
+      <p class="topbar__notice">
+        <span class="topbar__notice-dot" aria-hidden="true"></span>
+        こちらは東京都の公式ウェブサイトです
+      </p>
+      <div class="topbar__lang" aria-label="言語選択">
+        <a href="#" class="topbar__lang-link" lang="en">English</a>
+        <a href="#" class="topbar__lang-link" lang="zh">中文</a>
+        <a href="#" class="topbar__lang-link" lang="ko">한국어</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+
+      <a href="#" class="header__logo">
+        <div class="header__emblem" aria-hidden="true">
+          <span class="header__emblem-text">都</span>
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-en">Tokyo Metropolitan Government</span>
+          <span class="header__logo-jp">東京都</span>
+        </div>
+      </a>
+
+      <nav class="header__nav" aria-label="グローバルナビゲーション">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#" class="header__nav-link">都政情報</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">都民の方へ</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">事業者の方へ</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">東京の魅力</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">観光・国際</a></li>
+        </ul>
+      </nav>
+
+      <button class="header__search-btn" aria-label="サイト内検索">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <span class="header__search-label">検索</span>
+      </button>
+
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ===== MOBILE NAV ===== -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <nav aria-label="モバイルナビゲーション">
+      <ul class="mobile-nav__list">
+        <li><a href="#" class="mobile-nav__link">都政情報</a></li>
+        <li><a href="#" class="mobile-nav__link">都民の方へ</a></li>
+        <li><a href="#" class="mobile-nav__link">事業者の方へ</a></li>
+        <li><a href="#" class="mobile-nav__link">東京の魅力</a></li>
+        <li><a href="#" class="mobile-nav__link">観光・国際</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- ① HERO -->
+    <section class="hero" id="hero" aria-label="メインビジュアル">
+
+      <div class="hero__bg" id="heroBg">
+        <!--
+          フリー素材: Unsplash (unsplash.com) — ライセンス: Unsplash License (商用利用可・帰属不要)
+          1. Aerial view of Tokyo at night — Photographer: Pawel Nolbert
+          2. Shibuya Crossing — Photographer: Jezael Melgoza
+          3. Tokyo Tower cityscape — Photographer: Ryo Yoshitake
+          4. Shinjuku skyline at dusk — Photographer: Aleksandar Pasaric (via Pexels)
+        -->
+        <div class="hero__slide hero__slide--active"
+             style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1920&q=80')"
+             role="img" aria-label="夜景の東京全景"></div>
+        <div class="hero__slide"
+             style="background-image: url('https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1920&q=80')"
+             role="img" aria-label="渋谷スクランブル交差点"></div>
+        <div class="hero__slide"
+             style="background-image: url('https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1920&q=80')"
+             role="img" aria-label="東京タワーと都市景観"></div>
+        <div class="hero__slide"
+             style="background-image: url('https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1920&q=80')"
+             role="img" aria-label="夕暮れ時の新宿スカイライン"></div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow js-fade">Tokyo Metropolitan Government — Official Website</p>
+        <h1 class="hero__title">
+          <span class="hero__title-en js-fade">TOKYO</span>
+          <span class="hero__title-jp js-fade">東京都公式ウェブサイト</span>
+        </h1>
+        <p class="hero__lead js-fade">東京都の行政情報、都民サービス、<br>イベント・観光情報をひとつにまとめてお届けします。</p>
+        <div class="hero__cta js-fade">
+          <a href="#services" class="hero__btn hero__btn--primary">
+            <span class="hero__btn-label">都民サービスを探す</span>
+          </a>
+          <a href="#topics" class="hero__btn hero__btn--secondary">
+            <span class="hero__btn-label">お知らせ一覧</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__stats" aria-label="東京都の基本データ">
+        <dl class="hero__stats-list">
+          <div class="hero__stats-item">
+            <dt class="hero__stats-label">推計人口</dt>
+            <dd class="hero__stats-value">1,401<span class="hero__stats-unit">万人</span></dd>
+          </div>
+          <div class="hero__stats-item">
+            <dt class="hero__stats-label">面積</dt>
+            <dd class="hero__stats-value">2,194<span class="hero__stats-unit">km²</span></dd>
+          </div>
+          <div class="hero__stats-item">
+            <dt class="hero__stats-label">特別区</dt>
+            <dd class="hero__stats-value">23<span class="hero__stats-unit">区</span></dd>
+          </div>
+          <div class="hero__stats-item">
+            <dt class="hero__stats-label">市町村</dt>
+            <dd class="hero__stats-value">39<span class="hero__stats-unit">市町村</span></dd>
+          </div>
+        </dl>
+      </div>
+
+    </section>
+    <!-- /hero -->
+
+    <!-- ② TICKER -->
+    <div class="ticker" role="marquee" aria-label="お知らせ">
+      <span class="ticker__badge">お知らせ</span>
+      <div class="ticker__track">
+        <div class="ticker__inner">
+          <span class="ticker__text">【重要】令和7年度東京都予算案を公表しました&emsp;／&emsp;東京都知事定例会見（令和7年6月3日）のお知らせ&emsp;／&emsp;都立病院における診療体制の一部変更について&emsp;／&emsp;2025年度スタートアップ支援プログラムの募集を開始しました&emsp;／&emsp;東京2025世界陸上競技選手権大会チケット先行販売のお知らせ&emsp;&emsp;</span>
+          <span class="ticker__text" aria-hidden="true">【重要】令和7年度東京都予算案を公表しました&emsp;／&emsp;東京都知事定例会見（令和7年6月3日）のお知らせ&emsp;／&emsp;都立病院における診療体制の一部変更について&emsp;／&emsp;2025年度スタートアップ支援プログラムの募集を開始しました&emsp;／&emsp;東京2025世界陸上競技選手権大会チケット先行販売のお知らせ&emsp;&emsp;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ③ TOPICS -->
+    <section class="topics" id="topics" aria-label="新着情報">
+      <div class="topics__inner">
+
+        <header class="topics__head js-fade">
+          <div class="topics__head-left">
+            <span class="section-label-en">NEWS &amp; TOPICS</span>
+            <h2 class="topics__title">新着情報・お知らせ</h2>
+          </div>
+          <a href="#" class="topics__more">一覧を見る →</a>
+        </header>
+
+        <div class="topics__body">
+
+          <ul class="topics__list js-fade">
+            <li class="topics__item">
+              <a href="#" class="topics__item-link">
+                <time class="topics__item-date" datetime="2026-06-03">2026.06.03</time>
+                <span class="topics__badge topics__badge--urgent">重要</span>
+                <span class="topics__item-text">令和7年度東京都予算案の概要について</span>
+              </a>
+            </li>
+            <li class="topics__item">
+              <a href="#" class="topics__item-link">
+                <time class="topics__item-date" datetime="2026-06-02">2026.06.02</time>
+                <span class="topics__badge topics__badge--info">お知らせ</span>
+                <span class="topics__item-text">東京都スタートアップ支援プログラム2025 参加者募集開始</span>
+              </a>
+            </li>
+            <li class="topics__item">
+              <a href="#" class="topics__item-link">
+                <time class="topics__item-date" datetime="2026-06-01">2026.06.01</time>
+                <span class="topics__badge topics__badge--event">イベント</span>
+                <span class="topics__item-text">第76回東京都美術展覧会の作品募集を開始します</span>
+              </a>
+            </li>
+            <li class="topics__item">
+              <a href="#" class="topics__item-link">
+                <time class="topics__item-date" datetime="2026-05-30">2026.05.30</time>
+                <span class="topics__badge topics__badge--info">お知らせ</span>
+                <span class="topics__item-text">令和7年度東京都職員採用選考（一般方式）の実施について</span>
+              </a>
+            </li>
+            <li class="topics__item">
+              <a href="#" class="topics__item-link">
+                <time class="topics__item-date" datetime="2026-05-28">2026.05.28</time>
+                <span class="topics__badge topics__badge--policy">政策</span>
+                <span class="topics__item-text">ゼロエミッション東京戦略2.0 改訂版の策定について</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="topics__feature js-fade">
+            <figure class="topics__feature-fig">
+              <img src="https://placehold.co/600x360/12274f/4a7ab5?text=Feature" alt="特集記事のビジュアル" class="topics__feature-img" loading="lazy">
+            </figure>
+            <div class="topics__feature-body">
+              <span class="topics__feature-tag">FEATURE</span>
+              <h3 class="topics__feature-title">東京の未来を、ともに描く。<br>TOKYO GREEN 2050</h3>
+              <p class="topics__feature-text">2050年のカーボンニュートラル実現に向け、東京都は「ゼロエミッション東京戦略」を推進。再生可能エネルギーの普及から次世代モビリティまで、東京の取り組みをご紹介します。</p>
+              <a href="#" class="topics__feature-link">詳しく見る →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /topics -->
+
+    <!-- ④ SERVICES -->
+    <section class="services" id="services" aria-label="都民サービス">
+      <div class="services__inner">
+
+        <header class="services__head js-fade">
+          <span class="section-label-en">CITY SERVICES</span>
+          <h2 class="services__title">都民サービス</h2>
+          <p class="services__sub">カテゴリーから探す</p>
+        </header>
+
+        <ul class="services__grid" role="list">
+          <li class="services__item js-fade">
+            <a href="#" class="service-card">
+              <div class="service-card__icon" aria-hidden="true"><span>医</span></div>
+              <h3 class="service-card__name">医療・健康</h3>
+              <p class="service-card__desc">医療機関案内、感染症情報、予防接種</p>
+              <span class="service-card__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="services__item js-fade">
+            <a href="#" class="service-card">
+              <div class="service-card__icon service-card__icon--green" aria-hidden="true"><span>育</span></div>
+              <h3 class="service-card__name">教育・子育て</h3>
+              <p class="service-card__desc">保育園・幼稚園、学校教育、子育て支援</p>
+              <span class="service-card__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="services__item js-fade">
+            <a href="#" class="service-card">
+              <div class="service-card__icon service-card__icon--orange" aria-hidden="true"><span>交</span></div>
+              <h3 class="service-card__name">交通・インフラ</h3>
+              <p class="service-card__desc">道路・交通情報、水道、防災・減災</p>
+              <span class="service-card__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="services__item js-fade">
+            <a href="#" class="service-card">
+              <div class="service-card__icon service-card__icon--red" aria-hidden="true"><span>産</span></div>
+              <h3 class="service-card__name">産業・雇用</h3>
+              <p class="service-card__desc">中小企業支援、雇用促進、スタートアップ</p>
+              <span class="service-card__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="services__item js-fade">
+            <a href="#" class="service-card">
+              <div class="service-card__icon service-card__icon--teal" aria-hidden="true"><span>環</span></div>
+              <h3 class="service-card__name">環境・福祉</h3>
+              <p class="service-card__desc">ゼロエミッション、福祉サービス、バリアフリー</p>
+              <span class="service-card__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="services__item js-fade">
+            <a href="#" class="service-card">
+              <div class="service-card__icon service-card__icon--purple" aria-hidden="true"><span>観</span></div>
+              <h3 class="service-card__name">観光・文化</h3>
+              <p class="service-card__desc">東京観光情報、文化施設、イベント案内</p>
+              <span class="service-card__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <!-- /services -->
+
+    <!-- ⑤ STATISTICS -->
+    <section class="stats" id="stats" aria-label="東京都の統計">
+      <div class="stats__inner">
+
+        <header class="stats__head js-fade">
+          <span class="section-label-en section-label-en--dim">TOKYO IN NUMBERS</span>
+          <h2 class="stats__title">数字で見る東京</h2>
+        </header>
+
+        <ul class="stats__grid" role="list">
+          <li class="stats__item js-fade">
+            <article class="stats-card stats-card--red">
+              <p class="stats-card__num"><span class="stats-card__value">1,401</span><span class="stats-card__unit">万人</span></p>
+              <h3 class="stats-card__label">推計人口</h3>
+              <p class="stats-card__note">日本の総人口の約11%を占める大都市</p>
+            </article>
+          </li>
+          <li class="stats__item js-fade">
+            <article class="stats-card stats-card--blue">
+              <p class="stats-card__num"><span class="stats-card__value">96.3</span><span class="stats-card__unit">兆円</span></p>
+              <h3 class="stats-card__label">都内総生産（GDP）</h3>
+              <p class="stats-card__note">世界有数の経済都市として成長を続ける</p>
+            </article>
+          </li>
+          <li class="stats__item js-fade">
+            <article class="stats-card stats-card--green">
+              <p class="stats-card__num"><span class="stats-card__value">3,000</span><span class="stats-card__unit">万人+</span></p>
+              <h3 class="stats-card__label">年間外国人旅行者数</h3>
+              <p class="stats-card__note">世界でも有数の国際観光都市</p>
+            </article>
+          </li>
+          <li class="stats__item js-fade">
+            <article class="stats-card stats-card--gold">
+              <p class="stats-card__num"><span class="stats-card__value">200</span><span class="stats-card__unit">以上</span></p>
+              <h3 class="stats-card__label">国際交流都市・地域数</h3>
+              <p class="stats-card__note">姉妹都市・友好都市など国際ネットワーク</p>
+            </article>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <!-- /stats -->
+
+    <!-- ⑥ PICKUP -->
+    <section class="pickup" id="pickup" aria-label="ピックアップ">
+      <div class="pickup__inner">
+
+        <header class="pickup__head js-fade">
+          <div class="pickup__head-left">
+            <span class="section-label-en">PICKUP &amp; EVENTS</span>
+            <h2 class="pickup__title">ピックアップ</h2>
+          </div>
+          <a href="#" class="topics__more">一覧を見る →</a>
+        </header>
+
+        <ul class="pickup__grid" role="list">
+          <li class="pickup__item js-fade">
+            <article class="pickup-card">
+              <div class="pickup-card__image-wrapper">
+                <img src="https://placehold.co/600x360/12274f/4a7ab5?text=Tokyo+2025" alt="東京2025大会" class="pickup-card__image" loading="lazy">
+                <span class="pickup-card__tag">スポーツ</span>
+              </div>
+              <div class="pickup-card__body">
+                <time class="pickup-card__date" datetime="2026-07-01">2026.07.01</time>
+                <h3 class="pickup-card__title">東京2025世界陸上競技選手権大会 公式チケット販売開始</h3>
+                <a href="#" class="pickup-card__link">詳しく見る →</a>
+              </div>
+            </article>
+          </li>
+          <li class="pickup__item js-fade">
+            <article class="pickup-card">
+              <div class="pickup-card__image-wrapper">
+                <img src="https://placehold.co/600x360/1a3a1a/4a8a4a?text=Green+Tokyo" alt="緑あふれる東京" class="pickup-card__image" loading="lazy">
+                <span class="pickup-card__tag pickup-card__tag--green">環境</span>
+              </div>
+              <div class="pickup-card__body">
+                <time class="pickup-card__date" datetime="2026-06-15">2026.06.15</time>
+                <h3 class="pickup-card__title">TOKYO GREEN WEEK 2026 ─ みどりの東京を体感しよう</h3>
+                <a href="#" class="pickup-card__link">詳しく見る →</a>
+              </div>
+            </article>
+          </li>
+          <li class="pickup__item js-fade">
+            <article class="pickup-card">
+              <div class="pickup-card__image-wrapper">
+                <img src="https://placehold.co/600x360/2a1a3a/8a4aaa?text=Tokyo+Culture" alt="東京の文化" class="pickup-card__image" loading="lazy">
+                <span class="pickup-card__tag pickup-card__tag--culture">文化</span>
+              </div>
+              <div class="pickup-card__body">
+                <time class="pickup-card__date" datetime="2026-06-20">2026.06.20</time>
+                <h3 class="pickup-card__title">第76回東京都美術展覧会 ─ 市民の芸術、市民の文化</h3>
+                <a href="#" class="pickup-card__link">詳しく見る →</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <!-- /pickup -->
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <div class="footer__emblem" aria-hidden="true">都</div>
+            <div>
+              <span class="footer__logo-en">Tokyo Metropolitan Government</span>
+              <span class="footer__logo-jp">東京都</span>
+            </div>
+          </a>
+          <address class="footer__address">
+            〒163-8001 東京都新宿区西新宿二丁目8番1号<br>
+            電話：03-5321-1111（代表）
+          </address>
+        </div>
+
+        <nav class="footer__nav" aria-label="フッターナビゲーション">
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-heading">都政情報</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#" class="footer__nav-link">知事・幹部職員</a></li>
+              <li><a href="#" class="footer__nav-link">都議会</a></li>
+              <li><a href="#" class="footer__nav-link">予算・財政</a></li>
+              <li><a href="#" class="footer__nav-link">条例・規則</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-heading">都民サービス</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#" class="footer__nav-link">医療・健康</a></li>
+              <li><a href="#" class="footer__nav-link">教育・子育て</a></li>
+              <li><a href="#" class="footer__nav-link">福祉・介護</a></li>
+              <li><a href="#" class="footer__nav-link">産業・雇用</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-heading">東京の魅力</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#" class="footer__nav-link">観光情報</a></li>
+              <li><a href="#" class="footer__nav-link">文化・芸術</a></li>
+              <li><a href="#" class="footer__nav-link">スポーツ</a></li>
+              <li><a href="#" class="footer__nav-link">国際交流</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-heading">サイト情報</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#" class="footer__nav-link">サイトについて</a></li>
+              <li><a href="#" class="footer__nav-link">プライバシーポリシー</a></li>
+              <li><a href="#" class="footer__nav-link">アクセシビリティ</a></li>
+              <li><a href="#" class="footer__nav-link">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">Copyright © Tokyo Metropolitan Government. All rights reserved.</p>
+        <p class="footer__disclaimer">このサイトはポートフォリオ制作を目的とした架空のサイトです。</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    /* -----------------------------------------------
+       Hero Slideshow — 6秒ごとにクロスフェード切替
+    ----------------------------------------------- */
+    const heroSlides  = document.querySelectorAll('.hero__slide');
+    let   activeSlide = 0;
+
+    function advanceSlide() {
+      heroSlides[activeSlide].classList.remove('hero__slide--active');
+      activeSlide = (activeSlide + 1) % heroSlides.length;
+      heroSlides[activeSlide].classList.add('hero__slide--active');
+    }
+
+    setInterval(advanceSlide, 6000);
+
+    /* -----------------------------------------------
+       Header scroll
+    ----------------------------------------------- */
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 10);
+    }, { passive: true });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav  = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      const next = hamburger.getAttribute('aria-expanded') !== 'true';
+      hamburger.setAttribute('aria-expanded', String(next));
+      hamburger.classList.toggle('header__hamburger--open', next);
+      mobileNav.classList.toggle('mobile-nav--open', next);
+      mobileNav.setAttribute('aria-hidden', String(!next));
+      document.body.classList.toggle('is-nav-open', next);
+    });
+    mobileNav.querySelectorAll('.mobile-nav__link').forEach(l => {
+      l.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('header__hamburger--open');
+        mobileNav.classList.remove('mobile-nav--open');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('is-nav-open');
+      });
+    });
+
+    const fadeObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); fadeObs.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.js-fade').forEach(el => fadeObs.observe(el));
+  </script>
+
+</body>
+</html>
