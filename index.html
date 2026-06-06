@@ -1,1 +1,132 @@
-C:\Users\User\Desktop\webぺージ\portfolio_index_template.html の中身をそのまま貼り付け
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web制作ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:   #0D1F3C;
+      --accent: #2ABFBF;
+      --bg:     #F4F7FA;
+      --white:  #FFFFFF;
+      --text:   #1A1A2E;
+      --muted:  #5C6B82;
+    }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    .header { background: var(--navy); padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; }
+    .header__logo { font-family: 'Montserrat', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--white); letter-spacing: 0.05em; }
+    .header__logo span { color: var(--accent); }
+    .header__tag { font-size: 0.8rem; color: rgba(255,255,255,0.55); letter-spacing: 0.1em; }
+    .hero { background: linear-gradient(135deg, var(--navy) 0%, #0a2a4a 100%); padding: 80px 40px; text-align: center; }
+    .hero__label { font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em; color: var(--accent); text-transform: uppercase; margin-bottom: 16px; }
+    .hero__title { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; color: var(--white); line-height: 1.35; margin-bottom: 20px; }
+    .hero__sub { font-size: 1rem; color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 32px; line-height: 1.8; }
+    .hero__badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+    .hero__badge { background: rgba(42,191,191,0.15); border: 1px solid rgba(42,191,191,0.35); color: var(--accent); font-size: 0.8rem; font-weight: 600; padding: 6px 16px; border-radius: 9999px; }
+    .works { max-width: 1080px; margin: 0 auto; padding: 72px 40px; }
+    .works__heading { text-align: center; margin-bottom: 56px; }
+    .works__heading h2 { font-size: 1.75rem; font-weight: 700; color: var(--navy); }
+    .works__heading h2::after { content: ''; display: block; width: 40px; height: 3px; background: linear-gradient(90deg, var(--accent), #5DD9D9); border-radius: 9999px; margin: 12px auto 0; }
+    .works__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
+    .work-card { background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(13,31,60,0.10); transition: transform 0.28s ease, box-shadow 0.28s ease; }
+    .work-card:hover { transform: translateY(-6px); box-shadow: 0 8px 32px rgba(13,31,60,0.16); }
+    .work-card__thumb { position: relative; aspect-ratio: 16/9; overflow: hidden; }
+    .work-card__thumb-bg { width: 100%; height: 100%; object-fit: cover; transition: transform 0.55s ease; }
+    .work-card:hover .work-card__thumb-bg { transform: scale(1.05); }
+    .work-card__thumb-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,31,60,0.65) 0%, transparent 50%); }
+    .work-card__category { position: absolute; top: 14px; left: 14px; background: var(--accent); color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; padding: 4px 12px; border-radius: 9999px; text-transform: uppercase; }
+    .work-card__body { padding: 24px; }
+    .work-card__title { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--navy); }
+    .work-card__desc { font-size: 0.875rem; color: var(--muted); line-height: 1.7; margin-bottom: 16px; }
+    .work-card__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+    .work-card__tag { font-size: 0.75rem; color: var(--muted); background: var(--bg); padding: 3px 10px; border-radius: 9999px; border: 1px solid #D6E0EC; }
+    .work-card__link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.875rem; font-weight: 700; color: var(--accent); border-bottom: 1px solid rgba(42,191,191,0.35); padding-bottom: 2px; transition: gap 0.2s ease; }
+    .work-card__link:hover { gap: 10px; }
+    .skills { background: var(--navy); padding: 64px 40px; text-align: center; }
+    .skills__title { font-size: 1.4rem; font-weight: 700; color: var(--white); margin-bottom: 32px; }
+    .skills__grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; max-width: 720px; margin: 0 auto; }
+    .skill-chip { background: rgba(255,255,255,0.08); border: 1px solid rgba(42,191,191,0.25); color: rgba(255,255,255,0.85); font-size: 0.875rem; padding: 8px 20px; border-radius: 9999px; }
+    .footer { background: #060e1c; padding: 32px 40px; text-align: center; }
+    .footer__text { font-size: 0.8rem; color: rgba(255,255,255,0.35); }
+    @media (max-width: 640px) { .header { padding: 16px 20px; } .hero { padding: 56px 20px; } .works { padding: 48px 20px; } .skills { padding: 48px 20px; } }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">Web<span>Portfolio</span></div>
+    <p class="header__tag">HTML / CSS / JavaScript</p>
+  </header>
+  <section class="hero">
+    <p class="hero__label">Portfolio</p>
+    <h1 class="hero__title">デザインとコードで、<br>伝わるWebサイトをつくります。</h1>
+    <p class="hero__sub">武蔵野美術大学出身デザイナーとの2名体制。<br>LP・HP制作・レスポンシブ対応・アニメーション実装まで一貫して対応します。</p>
+    <div class="hero__badges">
+      <span class="hero__badge">HTML / CSS</span>
+      <span class="hero__badge">BEM設計</span>
+      <span class="hero__badge">レスポンシブ</span>
+      <span class="hero__badge">Vanilla JS</span>
+      <span class="hero__badge">LP制作</span>
+      <span class="hero__badge">HP制作</span>
+    </div>
+  </section>
+  <section class="works">
+    <div class="works__heading"><h2>制作実績</h2></div>
+    <div class="works__grid">
+      <div class="work-card">
+        <div class="work-card__thumb">
+          <img class="work-card__thumb-bg" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Feuille café" />
+          <div class="work-card__thumb-overlay"></div>
+          <span class="work-card__category">Café HP</span>
+        </div>
+        <div class="work-card__body">
+          <h3 class="work-card__title">Feuille café</h3>
+          <p class="work-card__desc">東京・表参道の架空カフェHP。余白と配色にこだわった高級感のあるデザイン。スクロールフェードイン・ホバーアニメーション実装。</p>
+          <div class="work-card__tags"><span class="work-card__tag">HTML/CSS</span><span class="work-card__tag">レスポンシブ</span><span class="work-card__tag">アニメーション</span></div>
+          <a href="cafe/" class="work-card__link">サイトを見る →</a>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-card__thumb">
+          <img class="work-card__thumb-bg" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80" alt="東京都HP" />
+          <div class="work-card__thumb-overlay"></div>
+          <span class="work-card__category">Gov HP</span>
+        </div>
+        <div class="work-card__body">
+          <h3 class="work-card__title">東京都 Webサイト風</h3>
+          <p class="work-card__desc">官公庁らしい公式感と大都市の都会感を表現。背景スライドショー・ケンバーンズ効果・ニューステッカー実装。</p>
+          <div class="work-card__tags"><span class="work-card__tag">HTML/CSS</span><span class="work-card__tag">スライドショー</span><span class="work-card__tag">Unsplash</span></div>
+          <a href="tokyo/" class="work-card__link">サイトを見る →</a>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-card__thumb">
+          <img class="work-card__thumb-bg" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="FitCore LP" />
+          <div class="work-card__thumb-overlay"></div>
+          <span class="work-card__category">Gym LP</span>
+        </div>
+        <div class="work-card__body">
+          <h3 class="work-card__title">FitCore — パーソナルジム LP</h3>
+          <p class="work-card__desc">無料カウンセリング予約に特化したLP。カウンターアップ・CTAパルス・グレースケールホバーなど複数のアニメーション実装。</p>
+          <div class="work-card__tags"><span class="work-card__tag">LP設計</span><span class="work-card__tag">CV最適化</span><span class="work-card__tag">JS Animation</span></div>
+          <a href="gym/" class="work-card__link">サイトを見る →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills">
+    <p class="skills__title">使用技術 / スキル</p>
+    <div class="skills__grid">
+      <span class="skill-chip">HTML5</span><span class="skill-chip">CSS3 / BEM</span><span class="skill-chip">CSS Grid / Flexbox</span><span class="skill-chip">CSS Custom Properties</span><span class="skill-chip">Vanilla JavaScript</span><span class="skill-chip">IntersectionObserver</span><span class="skill-chip">レスポンシブデザイン</span><span class="skill-chip">Google Fonts</span><span class="skill-chip">Unsplash 素材</span><span class="skill-chip">アクセシビリティ対応</span>
+    </div>
+  </section>
+  <footer class="footer">
+    <p class="footer__text">&copy; 2024 Web Portfolio. Built with HTML / CSS / JavaScript.</p>
+  </footer>
+</body>
+</html>
